@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/home/louiza/Bureau/HTML/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Exo5</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="text-center">Mon Exo5 J-S</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+          <form class="text-center" name="f" action="index.html" method="post">
+            <input type="button" value="Les Animeaux" onClick="parcrTab()">
+          </form>
+          <!-- <p class="text-center" id="partab"></p> -->
+        </div>
+        <div class="col-12 col-md-3">
+          <form class="text-center" name="f1" action="index.html" method="post">
+            <input type="button" value="Les Clube" onClick="parcrTab1()">
+          </form>
+          <!-- <p class="text-center" id="partab1"></p> -->
+        </div>
+        <div class="col-12 col-md-3">
+          <form class="text-center" name="f2" action="index.html" method="post">
+            <input type="button" value="Les Océans" onClick="parcrTab2()">
+          </form>
+          <!-- <p class="text-center" id="partab2"></p> -->
+        </div>
+        <div class="col-12 col-md-3">
+          <form class="text-center" name="f3" action="index.html" method="post">
+            <input type="button" value="Les Planètes" onClick="parcrTab3()">
+          </form>
+          <p class="text-center" id="tabb2"></p>
+        </div>
+        <button type="button" onclick="crementClic()" name="button"></button>
+        <input id="inpt" type="button" name="" value="">
+      </div>
+    </div>
+    <script type="text/javascript">
+
+    var cre = 0;
+
+function crementClic() {
+    if (cre < 30) {
+        cre+=1;
+     document.getElementById('inpt').value = cre;
+      }
+    }
+
+
+        // var tab = ["Chat", "Chien", "Lion", "Vache"];
+        // var tab1 = ["M-City", "Liverpol", "Barça", "Réal-M"];
+        var tab2 = ["Pacific", "Atlantic", "Indian", "Arctic", "Antarctic"];
+
+      for (var i = 0; i < tab2.length; i++) {
+        document.getElementById('tabb2').innerHTML += tab2;
+        // console.log(tab2[i]);
+        // tab2[i]
+      }
+
+
+
+
+        // function parcrTab() {
+        //   for(var i = 0; i < tab.length; i++){
+        //     document.write(tab[i]);
+        //   }
+        // }
+        //
+        // function parcrTab1() {
+        //   for(var i in tab1)
+        //   {
+        //     document.write(tab1[i]);
+        //   }
+        // }
+        //
+        //
+        // function parcrTab2() {
+        //   tab2.forEach(function(y)
+        //   {
+        //      document.write(y);
+        //   }
+        //   );
+        // }
+        //
+        //
+        // function parcrTab3() {
+        //   ["Vénus", "Mars", "Terre", "Jupiter"].forEach(function(y) { document.write(y); });
+        // }
+  </script>
+
+  </body>
+</html>
